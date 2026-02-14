@@ -169,3 +169,4 @@ D:\C#\DataAlgorithmsTests\obj\Debug\net9.0\refint\DataAlgorithmsTests.dll
 D:\C#\DataAlgorithmsTests\obj\Debug\net9.0\DataAlgorithmsTests.pdb
 D:\C#\DataAlgorithmsTests\obj\Debug\net9.0\DataAlgorithmsTests.genruntimeconfig.cache
 D:\C#\DataAlgorithmsTests\obj\Debug\net9.0\ref\DataAlgorithmsTests.dll
+D:\C#\DataAlgorithmsTests\obj\Debug\net9.0\DataAlgorithmsTests.sourcelink.json

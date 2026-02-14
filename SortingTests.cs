@@ -37,6 +37,24 @@ namespace DataAlgorithmsTest
 
             Assert.AreEqual(0, result.Count);
         }
+        [TestMethod]
+        public void MergeSort_SortsByAgeCorrectly()
+        {
+            var people = new List<Person>
+            {
+                new Person { LastName = "Petrov", Age = 30 },
+                new Person { LastName = "Ivanov", Age = 25 },
+                new Person { LastName = "Sidorov", Age = 40 }
+            };
+
+            var comparer = new PersonAgeComparer();
+
+            var result = MergeSort.Sort(people, comparer);
+
+            Assert.AreEqual(25, result[0].Age);
+            Assert.AreEqual(30, result[1].Age);
+            Assert.AreEqual(40, result[2].Age);
+        }
 
         [TestMethod]
         public void QuickSort_SortsByLastNameCorrectly()
@@ -66,6 +84,24 @@ namespace DataAlgorithmsTest
 
             Assert.AreEqual(1, people.Count);
             Assert.AreEqual("Ivanov", people[0].LastName);
+        }
+        [TestMethod]
+        public void QuickSort_SortsByAgeCorrectly()
+        {
+            var people = new List<Person>
+            {
+                new Person { LastName = "Petrov", Age = 30 },
+                new Person { LastName = "Ivanov", Age = 25 },
+                new Person { LastName = "Sidorov", Age = 40 }
+            };
+
+            var comparer = new PersonAgeComparer();
+
+            QuickSort.Sort(people, comparer);
+
+            Assert.AreEqual(25, people[0].Age);
+            Assert.AreEqual(30, people[1].Age);
+            Assert.AreEqual(40, people[2].Age);
         }
 
         [TestMethod]
@@ -103,6 +139,25 @@ namespace DataAlgorithmsTest
             Assert.AreEqual("Petrov", people[1].LastName);
             Assert.AreEqual("Petrov", people[2].LastName);
         }
+        [TestMethod]
+        public void BubbleSort_SortsByAgeCorrectly()
+        {
+            var people = new List<Person>
+            {
+                new Person { LastName = "Petrov", Age = 30 },
+                new Person { LastName = "Ivanov", Age = 25 },
+                new Person { LastName = "Sidorov", Age = 40 }
+            };
+
+            var comparer = new PersonAgeComparer();
+
+            BubbleSort.Sort(people, comparer);
+
+            Assert.AreEqual(25, people[0].Age);
+            Assert.AreEqual(30, people[1].Age);
+            Assert.AreEqual(40, people[2].Age);
+        }
+
 
 
 
