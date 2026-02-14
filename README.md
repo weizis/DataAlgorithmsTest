@@ -22,6 +22,6 @@ Run all tests from the terminal:
 dotnet test DataAlgorithmsTests.csproj
 ```
 
-##Notes
+## Notes
 - Each sorting/search algorithm has multiple test cases to verify correctness
 - This project references the main DataAlgorithms library
